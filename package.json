@@ -1,6 +1,6 @@
 {
 	"name": "defaulter",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Create a property which will initialize itself on demand from a factory function or as an on-demand require",
 	"main": "defaulter.js",
 	"scripts": {

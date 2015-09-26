@@ -51,7 +51,7 @@ function makeFactory(factory, localModule){
 		var moduleName = factory
 		localModule = localModule || module
 		factory = function(){
-			return module.require(moduleName)
+			return localModule.require(moduleName)
 		}
 	}
 	if(!(factory instanceof Function)){
