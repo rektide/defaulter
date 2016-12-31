@@ -9,7 +9,7 @@ function defaulter(factory, localModule){
 	return {
 		get: function(){
 			if(val === undefined){
-				val= factory()
+				val= factory.call(this)
 			}
 			return val
 		},
