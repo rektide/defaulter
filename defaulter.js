@@ -47,7 +47,7 @@ function apply(factory, localModule, object, propertyName){
 * @param localModule - the module to require() from
 */
 function makeFactory(factory, localModule){
-	if(factory instanceof String){
+	if( typeof(factory)=== "string"){
 		var moduleName = factory
 		localModule = localModule || module
 		factory = function(){
